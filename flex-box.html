@@ -109,6 +109,26 @@
     .wrap-reverse {
         flex-wrap: wrap-reverse;
     }
+
+    .container3 {
+        max-width: 360px;
+        margin: 0 auto;
+        display: flex;
+        border: 1px solid #ccc;
+    }
+
+    .item3 {
+        flex: 1;
+        margin: 5px;
+        background: tomato;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .flex-flow {
+        flex-flow: row nowrap;
+    }
+    
 </style>
 
 <head>
@@ -223,6 +243,32 @@
             <div class="item2">TesteDoItem1</div>
             <div class="item2">TesteDoItem2</div>
             <div class="item2">TesteDoItem3</div>
+        </section>
+
+    </div>
+
+    <div class="container-total">
+        <h1>Flex-Flow</h1>
+
+        <h2>flex-wrap: nowrap;</h2>
+        <section class="container3 flex-flow">
+            <div class="item3">TesteDoItem1</div>
+            <div class="item3">TesteDoItem2</div>
+            <div class="item3">TesteDoItem3</div>
+        </section>
+
+        <h2>flex-wrap: wrap;</h2>
+        <section class="container3 flex-wrap">
+            <div class="item3">TesteDoItem1</div>
+            <div class="item3">TesteDoItem2</div>
+            <div class="item3">TesteDoItem3</div>
+        </section>
+
+        <h2>flex-wrap: wrap-reverse</h2>
+        <section class="container3 wrap-reverse">
+            <div class="item3">TesteDoItem1</div>
+            <div class="item3">TesteDoItem2</div>
+            <div class="item3">TesteDoItem3</div>
         </section>
 
     </div>
