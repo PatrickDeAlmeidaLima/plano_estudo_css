@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
-    * {
-        /* background-color: #e0e0e0; */
-    }
-
     .container-total {
         max-width: 700px;
         border: 1px solid #8b8b8b;
@@ -167,7 +163,7 @@
     .item4 {
         margin: 5px;
         padding: 0 10px;
-        background-color: tomato;
+        background: tomato;
         text-align: center;
         font-size: 1.5em;
     }
@@ -180,6 +176,8 @@
     .flex1 {
         flex: 1;
     }
+
+    
 </style>
 
 <head>
@@ -359,21 +357,76 @@
             <div class="item4">4</div>
         </section>
 
-        <h2>Justify-Content: space-around</h2>
+        <h2>Justify-Content: space-around // itens com flex:1;</h2>
         <section class="container4 space-around">
+            <div class="item4 flex1">1</div>
+            <div class="item4 flex1">Teste 2222</div>
+            <div class="item4 flex1">3</div>
+            <div class="item4 flex1">4</div>
+        </section>
+
+        <h2>Justify-Content: flex-start; // column</h2>
+        <section class="container4 flex-start column">
             <div class="item4">1</div>
             <div class="item4">Teste2</div>
             <div class="item4">3</div>
             <div class="item4">4</div>
         </section>
 
-        <h2>Justify-Content: space-around flex</h2>
-        <section class="container4 space-around flex">
+        <h2>Justify-Content: flex-end; // column</h2>
+        <section class="container4 flex-end column">
             <div class="item4">1</div>
             <div class="item4">Teste2</div>
             <div class="item4">3</div>
             <div class="item4">4</div>
         </section>
+
+        <h2>Justify-Content: flex-center; // column</h2>
+        <section class="container4 center column">
+            <div class="item4">1</div>
+            <div class="item4">Teste2</div>
+            <div class="item4">3</div>
+            <div class="item4">4</div>
+        </section>
+
+        <h2>Justify-Content: space-between; // column</h2>
+        <section class="container4 space-between column">
+            <div class="item4">1</div>
+            <div class="item4">Teste2</div>
+            <div class="item4">3</div>
+            <div class="item4">4</div>
+        </section>
+
+        <h2>Justify-Content: space-around; // column</h2>
+        <section class="container4 space-around column">
+            <div class="item4">1</div>
+            <div class="item4">Teste2</div>
+            <div class="item4">3</div>
+            <div class="item4">4</div>
+        </section>
+
+        <h2>Justify-Content: space-around; // column // itens com flex:1;</h2>
+        <section class="container4 space-around column">
+            <div class="item4 flex1">1</div>
+            <div class="item4 flex1">Teste2</div>
+            <div class="item4 flex1">3</div>
+            <div class="item4 flex1">4</div>
+        </section>
+
+    </div>
+
+    <div class="container-total">
+        <h1>Justify-Content</h1>
+
+        <h2>Justify-Content: flex-start;</h2>
+        <section class="container4 flex-start">
+            <div class="item4">1</div>
+            <div class="item4">Teste2</div>
+            <div class="item4">3</div>
+            <div class="item4">4</div>
+        </section>
+
+        
 
     </div>
 </body>
